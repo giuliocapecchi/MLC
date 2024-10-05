@@ -2,7 +2,7 @@
 TARGET = main.exe
 
 # Source files
-SRC = main.c functions.c
+SRC = main.c utils.c
 
 # Compiler
 CC = gcc
