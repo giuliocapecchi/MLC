@@ -13,3 +13,7 @@ float reLu(float x){
 float leakyReLu(float x){
     return x > 0 ? x : 0.01*x;
 }
+
+float heavySide(float x){
+    return x > 0 ? 1 : 0;
+}

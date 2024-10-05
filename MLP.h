@@ -9,7 +9,7 @@ typedef struct {
     float *weights;
     float *biases;
     float *output;
-    float *delta;
+    float *errors;
 } Layer;
 
 typedef struct {
@@ -17,7 +17,11 @@ typedef struct {
     Layer *layers;
 } MLP;
 
-void initialize_layer();
+
+MLP* create_mlp(int num_layers, int *number_of_neurons);
+
+void free_mlp(MLP *mlp);
+
 
 void forward();
 
