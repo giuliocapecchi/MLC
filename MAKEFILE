@@ -1,0 +1,25 @@
+# Exec name
+TARGET = main.exe
+
+# Source files
+SRC = main.c functions.c
+
+# Compiler
+CC = gcc
+
+# Compiler flags
+CFLAGS = -g -Wall
+
+# Linker flags
+LDFLAGS = -lm
+
+# Default rule: build the executable
+all: $(TARGET)
+
+# Rule to build the executable (is the same as the default rule)
+$(TARGET): $(SRC)
+	$(CC) $(CFLAGS) $(SRC) -o $(TARGET) $(LDFLAGS)
+
+# Rule to clean the directory
+clean:
+	rm -f $(TARGET)
