@@ -2,7 +2,7 @@
 TARGET = main.exe
 
 # Source files
-SRC = main.c utils.c
+SRC = main.c utils.c MLP.c dataloader.c
 
 # Compiler
 CC = gcc

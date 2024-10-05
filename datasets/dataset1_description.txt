@@ -1,0 +1,2 @@
+Dataset1.txt contains a set of points distributed along a line passing trough the origin, ideal for linear regression.
+It's made up of 100 points.
